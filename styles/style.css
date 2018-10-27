@@ -1,0 +1,12 @@
+.title {
+    margin-bottom: 2rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+}
+
+.box .checkbox {
+    display: block;
+    margin-bottom: .5rem;
+}

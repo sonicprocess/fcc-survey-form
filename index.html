@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>FCC: Survey Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    
+    <body>
+        
+        <section class="hero is-primary is-fullheight">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-8-tablet is-7-desktop is-6-widescreen">
+                            
+                            <header>
+                                <h1 id="title" class="title is-1 has-text-centered">Survey Form</h1> <!-- User Story #1 -->
+                            </header>
+                            
+                            <form id="survey-form" class="box" action="#" method="post"> <!-- User Story #3 -->
+                                <p id="description" class="description">Let us know how we can improve freeCodeCamp!</p> <!-- User Story #2 -->
+                                <div class="field">
+                                    <label id="name-label" for="name" class="label">Name:</label> <!-- User Story #10 -->
+                                    <div class="control has-icons-left">
+                                        <input type="text" id="name" class="input" name="user_name" placeholder="What is your name?" required> <!-- User Story #4, #11 -->
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label id="email-label" for="email" class="label">Email:</label> <!-- User Story #10 -->
+                                    <div class="control has-icons-left">
+                                        <input type="email" id="email" class="input" name="user_email" placeholder="What is your email address?" required> <!-- User Stories #5, #6, #11 -->
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label id="number-label" for="number" class="label">Age:</label> <!-- User Story #10 -->
+                                    <div class="control has-icons-left">
+                                        <input type="number" id="number" class="input" name="user_age" placeholder="How old are you?" min="1" max="125" required> <!-- User Stories #7, #8, #9, #11 --> 
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-birthday-cake"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="dropdown" class="label">Which option best describes your current role?</label>
+                                    <div class="control">
+                                        <div class="select">
+                                            <select id="dropdown"> <!-- User Story #12 -->
+                                                <option value="" disabled>Select an option</option>
+                                                <option value="student">Student</option>
+                                                <option value="ftJob">Full Time Job</option>
+                                                <option value="ftLearner">Full Time Learner</option>
+                                                <option value="optOut">Prefer not to say</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <!-- User Story #13 -->
+                                    <span class="label">How likely is that you would recommend freeCodeCamp to a friend?</span>
+                                    
+                                    <div class="control">
+                                    
+                                        <label class="radio">
+                                            <input type="radio" name="recommend" value="definitely">
+                                            Definitely
+                                        </label>
+                                        
+                                        <label class="radio">
+                                            <input type="radio" name="recommend" value="maybe">
+                                            Maybe
+                                        </label>
+                                        
+                                        <label class="radio">
+                                            <input type="radio" name="recommend" value="notSure">
+                                            Not sure
+                                        </label>
+                                    
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="like" class="label">What do you like most in FCC?</label>
+                                    <div class="control">
+                                        <div class="select">
+                                            <select id="like"> 
+                                                <option value="" selected disabled>Select an option</option>
+                                                <option value="challenges">Challenges</option>
+                                                <option value="projects">Projects</option>
+                                                <option value="community">Community</option>
+                                                <option value="openSource">Open Source</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <!-- User Story #14 -->
+                                    <span class="label">Things that should be improved in the future (Check all that apply):</span>
+                                    
+                                    <div class="control">
+                                        <div class="columns is-gapless">
+                                            <div class="column">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="frontEndProjects">
+                                                    Front-end Projects
+                                                </label>
+                                                
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="backEndProjects">
+                                                    Back-end Projects
+                                                </label>
+                                                
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="dataVisualization">
+                                                    Data Visualization
+                                                </label>
+                                                
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="challenges">
+                                                    Challenges
+                                                </label>
+                                                
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="community">
+                                                    Open Source Community
+                                                </label>
+                                                
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="helpRooms">
+                                                    Gitter help rooms
+                                                </label>
+                                            </div>
+                                            
+                                            <div class="column">
+                                            
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="videos">
+                                                    Videos
+                                                </label>
+                                                
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="cityMeetups">
+                                                    City Meetups
+                                                </label>
+                                                
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="wiki">
+                                                    Wiki
+                                                </label>
+                                                
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="forum">
+                                                    Forum
+                                                </label>
+                                                
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="improvements" value="additionalCourses">
+                                                    Additional Courses
+                                                </label>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="field">
+                                    <label for="comments" class="label">Any Comments or Suggestions?</label>
+                                    <textarea id="comments" class="textarea" placeholder="Enter your comments here&hellip;" rows="3" cols="40"></textarea> <!-- User Story #15 -->
+                                </div>
+                                
+                                <div class="field">
+                                    <button id="submit" class="button is-primary">Submit</button> <!-- User Story #16 -->
+                                </div>
+                            </form>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
